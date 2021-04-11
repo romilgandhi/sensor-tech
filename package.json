@@ -1,0 +1,17 @@
+{
+  "name": "code-challenge",
+  "version": "1.0.0",
+  "description": "Pragmateam code challenge",
+  "scripts": {
+    "postinstall": "concurrently \"cd server && npm i\" \"cd client && npm i\"",
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PragmaAdmin/code-challenge.git"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "prettier": "^2.2.1"
+  }
+}
